@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вадим — портфолио-резюме</title>
+  <meta
+    name="description"
+    content="Одностраничное портфолио-резюме Вадима: опыт, образование, навыки, проекты и контакты."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-shell"></div>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#hero" aria-label="На первый экран">
+        <img class="brand__logo" src="assets/logo.svg" alt="Логотип VD" />
+        <span class="brand__text">
+          <span class="brand__title">Vadim</span>
+          <span class="brand__subtitle">portfolio / resume</span>
+        </span>
+      </a>
+
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        type="button"
+        aria-label="Переключить тему"
+      >
+        <span class="theme-toggle__dot"></span>
+        <span class="theme-toggle__label">Light</span>
+      </button>
+
+      <button
+        class="burger"
+        id="burger"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav"
+        aria-label="Открыть меню"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="#about">О себе</a>
+        <a class="nav__link" href="#experience">Опыт</a>
+        <a class="nav__link" href="#education">Образование</a>
+        <a class="nav__link" href="#skills">Навыки</a>
+        <a class="nav__link" href="#projects">Проекты</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Junior Frontend / Web</p>
+          <h1 class="hero__title">
+            Вадим — студент, IT-специалист и начинающий веб-разработчик.
+          </h1>
+          <p class="hero__text">
+            Собираю аккуратные интерфейсы, люблю системность в дизайне и
+            развиваюсь во frontend-разработке: от адаптивной верстки до
+            интерактива на JavaScript.
+          </p>
+
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projects">Смотреть проекты</a>
+            <a class="button button--ghost" href="#contacts">Связаться</a>
+          </div>
+
+          <ul class="hero__facts">
+            <li><strong>Город:</strong> Санкт-Петербург</li>
+            <li><strong>Фокус:</strong> HTML / CSS / JavaScript</li>
+            <li><strong>Подход:</strong> Mobile First</li>
+          </ul>
+        </div>
+
+        <div class="hero__card reveal reveal-delay">
+          <div class="profile-card">
+            <img
+              class="profile-card__avatar"
+              src="assets/profile.svg"
+              alt="Стилизованный портрет Вадима"
+            />
+            <div class="profile-card__body">
+              <p class="profile-card__name">Вадим</p>
+              <p class="profile-card__role">
+                Студент СПБГУПТД · IT · frontend direction
+              </p>
+              <div class="profile-card__meta">
+                <span>Адаптивная верстка</span>
+                <span>UI / UX thinking</span>
+                <span>JavaScript basics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contrast" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01</p>
+          <h2>О себе</h2>
+        </div>
+
+        <div class="about-layout">
+          <article class="card card--feature reveal">
+            <p class="lead">
+              Я учусь на 4 курсе СПБГУПТД, работаю в IT и параллельно развиваюсь в
+              веб-направлении. Мне интересна связка визуальной аккуратности и
+              технической логики: чтобы сайт выглядел современно, быстро
+              загружался и был удобен на мобильных устройствах.
+            </p>
+          </article>
+
+          <div class="about-side">
+            <article class="card reveal reveal-delay">
+              <h3>Подход</h3>
+              <p>
+                В работе ценю структуру, чистую верстку, единообразие компонентов и
+                понятную подачу информации.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <h3>Цель</h3>
+              <p>
+                Сейчас усиливаю базу по frontend-разработке и собираю портфолио из
+                учебных и практических проектов.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02</p>
+          <h2>Опыт</h2>
+        </div>
+
+        <div class="timeline timeline--offset">
+          <article class="timeline__item card reveal">
+            <div class="timeline__head">
+              <h3>Работа в IT</h3>
+              <span>настоящее время</span>
+            </div>
+            <p>
+              Практический опыт в цифровой среде: работа с техническими задачами,
+              коммуникацией и организацией процессов. Это помогает мне подходить к
+              разработке сайтов не только как к верстке, но и как к решению
+              реальных задач пользователя.
+            </p>
+          </article>
+
+          <article class="timeline__item card reveal reveal-delay">
+            <div class="timeline__head">
+              <h3>Учебные веб-проекты</h3>
+              <span>2025–2026</span>
+            </div>
+            <p>
+              Создание адаптивных макетов, одностраничных сайтов и интерфейсных
+              блоков с использованием HTML, CSS и JavaScript. Отрабатываю
+              семантику, визуальную систему, адаптивность и базовую интерактивность.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--split" id="education">
+      <div class="container">
+        <div class="education-layout">
+          <div class="section-heading reveal">
+            <p class="eyebrow">03</p>
+            <h2>Образование</h2>
+          </div>
+
+          <article class="card card--accent reveal reveal-delay">
+            <div class="split">
+              <div>
+                <h3>СПБГУПТД</h3>
+                <p>4 курс</p>
+              </div>
+              <div class="muted">
+                <p>Направление связано с цифровой и проектной средой.</p>
+                <p>
+                  Параллельно развиваю навыки веб-разработки и собираю рабочее
+                  портфолио.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04</p>
+          <h2>Навыки</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="card reveal">
+            <h3>Frontend</h3>
+            <ul class="tag-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive / Mobile First</li>
+              <li>CSS Grid / Flexbox</li>
+              <li>Базовая анимация интерфейса</li>
+            </ul>
+          </article>
+
+          <article class="card reveal reveal-delay">
+            <h3>Подход к работе</h3>
+            <ul class="tag-list">
+              <li>Аккуратная структура</li>
+              <li>Единообразие компонентов</li>
+              <li>Системный дизайн</li>
+              <li>Самообучение</li>
+              <li>Документирование процесса</li>
+            </ul>
+          </article>
+
+          <article class="card card--stats reveal">
+            <h3>Технический профиль</h3>
+
+            <div class="meter">
+              <div class="meter__row">
+                <span>HTML / семантика</span>
+                <strong>85%</strong>
+              </div>
+              <div class="meter__bar"><span style="--value: 85%"></span></div>
+            </div>
+
+            <div class="meter">
+              <div class="meter__row">
+                <span>CSS / адаптивность</span>
+                <strong>80%</strong>
+              </div>
+              <div class="meter__bar"><span style="--value: 80%"></span></div>
+            </div>
+
+            <div class="meter">
+              <div class="meter__row">
+                <span>JavaScript / интерактив</span>
+                <strong>65%</strong>
+              </div>
+              <div class="meter__bar"><span style="--value: 65%"></span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--projects" id="projects">
+      <div class="container">
+        <div class="projects-top">
+          <div class="section-heading reveal">
+            <p class="eyebrow">05</p>
+            <h2>Проекты</h2>
+          </div>
+
+          <div class="projects-toolbar reveal reveal-delay">
+            <button class="chip chip--active" type="button" data-filter="all">Все</button>
+            <!-- <button class="chip" type="button" data-filter="study">Учебные</button> -->
+            <button class="chip" type="button" data-filter="layout">Верстка</button>
+            <!-- <button class="chip" type="button" data-filter="ui">UI</button> -->
+            <button class="chip" type="button" data-filter="game">Игра</button>
+            <button class="chip" type="button" data-filter="dashboard">Dashboard</button>
+          </div>
+        </div>
+
+        <div class="projects-grid projects-grid--featured">
+          <!-- <article class="project card project--wide reveal" data-category="study layout ui"> -->
+            <!-- <div class="project__head">
+              <p class="project__number">01</p>
+              <span class="project__type">HTML / CSS / JavaScript</span>
+            </div> -->
+
+            <!-- <h3>Портфолио-резюме</h3>
+            <p>
+              Одностраничный сайт о себе с адаптивной версткой, анимацией при
+              прокрутке, фильтрацией карточек, переключением темы и аккуратной
+              монохромной визуальной системой.
+            </p> -->
+
+            <!-- <div class="project__meta">
+              <span>Тип: учебный проект</span>
+              <span>Роль: дизайн + верстка + JS</span>
+            </div> -->
+<!-- 
+            <div class="project__links">
+              <a class="project-link" href="PASTE_PORTFOLIO_DEMO_LINK" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a class="project-link" href="PASTE_PORTFOLIO_GITHUB_LINK" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div> -->
+          </article>
+
+          <article class="project card reveal reveal-delay" data-category="study ui dashboard">
+            <div class="project__head">
+              <p class="project__number">01</p>
+              <span class="project__type">Dashboard / UI</span>
+            </div>
+
+            <h3>Интерактивный dashboard</h3>
+            <p>
+              Учебный проект с интерфейсными виджетами, блоками статистики,
+              списком задач и визуальной организацией данных. Основа — работа с UI,
+              структурой и интерактивностью.
+            </p>
+
+            <div class="project__meta">
+              <span>Тип: учебный проект</span>
+              <span>Фокус: интерфейс и UX</span>
+            </div>
+
+            <div class="project__links">
+              <a class="project-link" href="https://sanset-sin.github.io/zadanie2/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a class="project-link" href="https://github.com/Sanset-Sin/zadanie2" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project card reveal" data-category="study game ui">
+            <div class="project__head">
+              <p class="project__number">02</p>
+              <span class="project__type">Game / JavaScript</span>
+            </div>
+
+            <h3>Мини-игра</h3>
+            <p>
+              Игровой учебный проект с логикой перемещения, препятствиями и
+              визуальным взаимодействием. Использовался как практика структуры,
+              сценариев поведения и игрового интерфейса.
+            </p>
+
+            <div class="project__meta">
+              <span>Тип: учебный проект</span>
+              <span>Фокус: логика и интерактив</span>
+            </div>
+
+            <div class="project__links">
+              <a class="project-link" href="https://sanset-sin.github.io/my_game/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a class="project-link" href="https://github.com/Sanset-Sin/my_game" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contacts" id="contacts">
+      <div class="container">
+        <div class="contacts-layout">
+          <article class="card card--feature reveal">
+            <p class="eyebrow">06</p>
+            <h2>Контакты</h2>
+            <p class="lead">
+              Открыт к учебным, проектным и стартовым коммерческим задачам во
+              frontend / web. Готов развиваться дальше, усиливать стек и собирать
+              более сложные интерфейсы.
+            </p>
+          </article>
+
+          <article class="card reveal reveal-delay">
+            <ul class="contacts-list">
+              <li>
+                <span>Email</span>
+                <a href="mailto:vadim.portfolio@example.com">vadim.test@example.com</a>
+              </li>
+              <li>
+                <span>Telegram</span>
+                <a href="https://t.me/Sanset_Sin" target="_blank" rel="noopener noreferrer">@Sanset_Sin</a>
+              </li>
+              <li>
+                <span>GitHub / Git</span>
+                <a href="https://github.com/Sanset-Sin" target="_blank" rel="noopener noreferrer">ссылка на профиль или репозиторий</a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Наверх">↑</button>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p><strong>Нейросеть:</strong> ChatGPT</p>
+      <p><strong>Время выполнения:</strong> 15 минут</p>
+      <p>
+        <strong>JavaScript:</strong> мобильное меню, анимация появления секций,
+        фильтрация проектов, подсветка активного раздела, переключение темы,
+        кнопка «наверх»
+      </p>
+      <p class="footer__copy">
+        © <span id="year"></span> Вадим. Одностраничное портфолио-резюме.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
